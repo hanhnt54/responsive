@@ -1,0 +1,40 @@
+#image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url('original-image.jpg');
+    background-size: cover;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Media Query for Tablet View (at 772px) */
+@media (min-width: 772px) and (max-width: 997px) {
+    .your-div-class {
+        width: 45%;
+        /* Adjust any other styles needed to fit the layout */
+    }
+
+    img {
+        max-height: 30vh;
+        /* Ensure images are no more than 30% of viewport height */
+        width: auto;
+        /* Maintain aspect ratio */
+    }
+}
+
+/* Media Query for Large Screen View (at 998px) */
+@media (min-width: 998px) {
+    .your-div-class {
+        width: 30%;
+        /* Adjust any other styles needed to fit the layout */
+    }
+}
